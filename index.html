@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Red River Tour – Tour Phú Quốc</title>
+<meta name="description" content="Red River Tour – bảng giá tour Phú Quốc: tàu 2–3 đảo, cano 4 đảo, câu cá, lặn biển, tham quan đất liền.">
+<style>
+:root{--navy:#1c3f7c;--blue:#2f7fc1;--amber:#f6a800;--bg:#f2f7fc;--ink:#14243f;--mut:#5b6b85}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;display:block}a{color:inherit}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 1px 8px #0002;padding:calc(8px + env(safe-area-inset-top,0px)) 14px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+header img{height:38px;width:auto}
+.lang button{border:1.5px solid var(--navy);background:#fff;color:var(--navy);font-weight:700;padding:5px 10px;border-radius:8px;margin-left:4px;cursor:pointer}
+.lang button.on{background:var(--navy);color:#fff}
+.wrap{max-width:1080px;margin:0 auto;padding:0 14px}
+.hero{padding:16px 0 8px;text-align:center}
+.hero img{border-radius:18px;margin:0 auto;width:100%;max-width:720px;box-shadow:0 6px 20px #0003}
+.hero h1{font-size:clamp(1.6rem,5vw,2.5rem);color:var(--navy);margin:18px 0 6px;line-height:1.2}
+.hero p{margin:0 auto;max-width:640px;color:var(--mut)}
+.badge{display:inline-block;background:var(--amber);color:#1b1b1b;font-weight:700;border-radius:99px;padding:5px 14px;margin:14px 0 4px;font-size:.9rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 20px;font:700 1rem inherit;font-family:inherit;text-decoration:none;color:#fff;cursor:pointer}
+.b-call{background:#d62f2f}.b-zalo{background:#0068ff}.b-wa{background:#1fa855}.b-nav{background:var(--navy)}
+h2{color:var(--navy);font-size:1.6rem;margin:34px 0 6px}
+.sub{color:var(--mut);margin:0 0 14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
+.chips button{border:1.5px solid var(--navy);background:#fff;color:var(--navy);font-weight:600;padding:7px 14px;border-radius:99px;cursor:pointer;font-family:inherit}
+.chips button.on{background:var(--navy);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:16px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 14px #1c3f7c26;display:flex;flex-direction:column}
+.ph{border:0;padding:0;background:#dbe8f5;cursor:zoom-in;aspect-ratio:720/505}
+.ph img{width:100%;height:100%;object-fit:cover}
+.cb{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.code{align-self:flex-start;background:var(--amber);font-weight:800;font-size:.75rem;padding:2px 9px;border-radius:6px}
+.cb h3{margin:2px 0;font-size:1.1rem;color:var(--navy);line-height:1.25}
+.cb p{margin:0;color:var(--mut);font-size:.93rem}
+.time{font-size:.9rem}
+.price{margin-top:auto;font-size:.95rem}.price b{font-size:1.45rem;color:#c9302c}
+.cb .btn{background:var(--blue);padding:10px;font-size:.95rem;margin-top:6px}
+.panel{background:#fff;border-radius:16px;padding:16px;box-shadow:0 3px 14px #1c3f7c1f}
+table{width:100%;border-collapse:collapse}td{padding:8px 4px;border-bottom:1px solid #e4ecf5}td:last-child{text-align:right;font-weight:700;white-space:nowrap;padding-left:10px}
+.note{color:#c9501c;font-size:.9rem;margin:10px 0 0}
+.pol{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.pol h4{margin:0 0 6px;color:var(--navy)}.pol p{margin:0;font-size:.94rem}
+.map{cursor:zoom-in;border-radius:16px;margin:0 auto;max-height:520px;width:auto;box-shadow:0 3px 14px #0003}
+.ct{display:grid;gap:8px}.ct div{display:flex;gap:10px}.ct b{min-width:92px;color:var(--navy)}
+.ad{margin:34px 0 10px;background:#0f1a2e;border:3px solid var(--amber);border-radius:18px;padding:20px;color:#fff;text-align:center}
+.ad small{color:var(--amber);letter-spacing:.08em;font-weight:700}
+.ad h3{margin:6px 0;font-size:1.4rem}
+.coupon{display:inline-block;background:var(--amber);color:#111;font-weight:800;font-size:1.3rem;border-radius:10px;padding:6px 18px;margin:8px 0}
+.ad ul{list-style:none;padding:0;margin:8px 0 14px;display:flex;gap:8px 18px;justify-content:center;flex-wrap:wrap;color:#d6e2f5}
+.ad .btn{background:var(--amber);color:#111}
+footer{margin-top:28px;background:var(--navy);color:#dbe7f7;text-align:center;padding:22px 14px}
+footer img{margin:8px auto 0;height:74px;width:auto;background:#fff;border-radius:10px;padding:6px 12px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:#fffffff2;box-shadow:0 -2px 12px #0003}
+.bar a{flex:1;padding:12px 4px;font-size:.95rem}
+.lb{position:fixed;inset:0;z-index:50;background:#000d;overflow:auto;display:none;padding:50px 10px 20px;text-align:center}
+.lb.on{display:block}.lb img{margin:0 auto;max-width:min(900px,100%);border-radius:8px;background:#fff}
+.lb button{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:12px;border:0;background:#fff;border-radius:99px;width:40px;height:40px;font-size:1.3rem;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+  <a href="#top"><img src="images/logo.png" alt="Red River Tour"></a>
+  <div class="lang" id="lang"><button data-l="vi">VI</button><button data-l="en">EN</button><button data-l="ru">RU</button></div>
+</header>
+
+<main class="wrap" id="top">
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Red River Tour Phú Quốc">
+    <span class="badge" data-t="badge"></span>
+    <h1 data-t="h1"></h1>
+    <p data-t="sub"></p>
+    <div class="cta">
+      <a class="btn b-call" data-ch="call" data-where="hero" href="tel:0907067786">📞 <span data-t="call"></span></a>
+      <a class="btn b-zalo" data-ch="zalo" data-where="hero" href="https://zalo.me/0907067786" target="_blank" rel="noopener">Zalo</a>
+      <a class="btn b-wa" data-ch="wa" data-where="hero" href="https://wa.me/84907067786" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="tours">
+    <h2 data-t="toursH"></h2>
+    <p class="sub" data-t="toursSub"></p>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="info">
+    <h2 data-t="pickH"></h2>
+    <div class="panel">
+      <table id="pick"></table>
+      <p class="note" data-t="pickNote"></p>
+    </div>
+
+    <h2 data-t="polH"></h2>
+    <div class="pol panel" id="pol"></div>
+
+    <h2 data-t="mapH"></h2>
+    <img class="map" id="mapImg" src="images/map.jpg" alt="Map" loading="lazy">
+  </section>
+
+  <section id="contact">
+    <h2 data-t="ctH"></h2>
+    <div class="panel ct">
+      <div><b data-t="hot"></b><span><a data-ch="call" data-where="contact" href="tel:0907067786"><strong>0907 067 786</strong></a> · <span>0297 730 9986</span></span></div>
+      <div><b>Email</b><a href="mailto:booking@redrivertours.com.vn">booking@redrivertours.com.vn</a></div>
+      <div><b>Website</b><a href="https://redrivertours.com.vn" target="_blank" rel="noopener">redrivertours.com.vn</a></div>
+      <div><b data-t="addr"></b><span>379 Trần Hưng Đạo, Xã Dương Tơ, TP. Phú Quốc</span></div>
+      <div class="cta" style="justify-content:flex-start;margin:6px 0 0">
+        <a class="btn b-call" data-ch="call" data-where="contact" href="tel:0907067786">📞 <span data-t="call"></span></a>
+        <a class="btn b-zalo" data-ch="zalo" data-where="contact" href="https://zalo.me/0907067786" target="_blank" rel="noopener">Zalo</a>
+        <a class="btn b-wa" data-ch="wa" data-where="contact" href="https://wa.me/84907067786" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <aside class="ad">
+    <small data-t="adTag"></small>
+    <h3>Ocean Sports VN</h3>
+    <div class="coupon" data-t="adOff"></div>
+    <p data-t="adTxt" style="margin:4px 0"></p>
+    <ul><li>📍 Nha Trang</li><li>📍 Phú Quốc</li><li>📍 Quy Nhơn</li></ul>
+    <a class="btn" data-ch="shop" data-where="ad" href="https://www.oceansportsvn.com" target="_blank" rel="noopener"><span data-t="adBtn"></span></a>
+  </aside>
+</main>
+
+<footer>
+  <div data-t="pay"></div>
+  <img src="images/pay.png" alt="Visa, Mastercard, PayPal">
+  <p style="margin:14px 0 0;font-size:.85rem">© Red River Tour · 379 Trần Hưng Đạo, Dương Tơ, Phú Quốc</p>
+</footer>
+
+<nav class="bar">
+  <a class="btn b-call" data-ch="call" data-where="float" href="tel:0907067786">📞 <span data-t="callS"></span></a>
+  <a class="btn b-zalo" data-ch="zalo" data-where="float" href="https://zalo.me/0907067786" target="_blank" rel="noopener">Zalo</a>
+  <a class="btn b-wa" data-ch="wa" data-where="float" href="https://wa.me/84907067786" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+<div class="lb" id="lb"><button aria-label="Close" id="lbx">✕</button><img id="lbi" alt=""></div>
+
+<script>
+// Dán link Web App (kết thúc bằng /exec) của Google Apps Script vào đây để đếm lượt bấm.
+var TRACK_URL = "https://script.google.com/macros/s/AKfycbzW_WvEA93x-V01ah_UHRTQS1A-sDfUk8AWM11Kn4F-WsYQjTPx1vCScWW85h7ITfoxRg/exec";
+
+var TOURS = [
+ {id:"03",c:"fish",k:"FISHING",p:"3.500.000",m:1,h:"5:00–13:30 / 15:30–23:00",
+  t:["Tour câu cá lớn","Deep sea fishing tour","Морская рыбалка"],
+  d:["Buổi sáng 5:00–13:30 hoặc buổi tối 15:30–23:00, gồm bữa ăn và dụng cụ câu. Option 1: 3.500.000₫ · Option 2: 3.800.000₫","Morning 5:00–13:30 or evening 15:30–23:00, meals and fishing gear included. Option 1: 3,500,000₫ · Option 2: 3,800,000₫","Утро 5:00–13:30 или вечер 15:30–23:00, питание и снасти включены. Вариант 1: 3 500 000₫ · Вариант 2: 3 800 000₫"]},
+ {id:"06",c:"sea",k:"RED1",p:"650.000",h:"8:00–17:00",
+  t:["Tàu 2 đảo: câu cá & bơi ngắm san hô","2-island boat tour: fishing & snorkeling","Лодка на 2 острова: рыбалка и снорклинг"],
+  d:["Hòn Rỏi (Ocean World), Hòn Gầm Ghì, Hòn Móng Tay; ăn trưa trên tàu","Ocean World (Coconut Islet), Gam Ghi and Mong Tay islets; lunch on board","Ocean World, острова Гам Ги и Монг Тай; обед на борту"]},
+ {id:"04",c:"sea",k:"RED SPECIAL",p:"820.000",h:"8:00–17:00",
+  t:["Tour tàu 3 đảo Phú Quốc","Phu Quoc 3-island boat tour","Тур на лодке по 3 островам"],
+  d:["Thêm Hòn Mây Rút Ngoài/Hòn Thơm: lặn ngắm san hô, ăn trưa, nước suối","Adds a final snorkeling stop at May Rut Ngoai / Hon Thom; lunch and water","Дополнительная остановка для снорклинга у May Rut Ngoai / Hon Thom; обед и вода"]},
+ {id:"05",c:"sea",k:"RED2",p:"1.600.000",h:"8:00–17:00",
+  t:["Tour tàu 3 đảo & cáp treo","3-island boat tour with cable car","3 острова на лодке и канатная дорога"],
+  d:["Công viên nước Aquatopia và cáp treo vượt biển dài nhất thế giới","Aquatopia water park and the world’s longest sea-crossing cable car","Аквапарк Aquatopia и самая длинная в мире канатная дорога через море"]},
+ {id:"07",c:"sea",k:"RED3",p:"1.550.000",m:1,h:"10:30–13:30 / 13:30–15:30",
+  t:["Đi bộ dưới biển hoặc lặn bình oxy","Sea-walking or scuba diving","Подводная прогулка или дайвинг"],
+  d:["Ocean World ở Hòn Rỏi, 12–15 phút dưới nước. Đi bộ dưới biển: 1.550.000₫ · Lặn bình oxy: 1.700.000₫","Ocean World at Roi islet, 12–15 minutes underwater. Sea-walking: 1,550,000₫ · Scuba: 1,700,000₫","Ocean World на острове Рой, 12–15 минут под водой. Морская прогулка: 1 550 000₫ · Дайвинг: 1 700 000₫"]},
+ {id:"08",c:"sea",k:"RED4",p:"430.000",h:"17:00–21:00",
+  t:["Ngắm hoàng hôn & câu mực đêm","Sunset & night squid fishing","Закат и ночная ловля кальмаров"],
+  d:["Hoàng hôn trên biển, câu mực, bữa tối trên tàu, xem pháo hoa Symphony of the Sea","Sunset at sea, squid fishing, dinner on board and the Symphony of the Sea fireworks","Закат на море, ловля кальмаров, ужин на борту и фейерверк Symphony of the Sea"]},
+ {id:"09",c:"speed",k:"TRIP1",p:"850.000",h:"8:00–15:00",
+  t:["Cano 4 đảo","Speedboat tour to 4 islands","Скоростной катер на 4 острова"],
+  d:["Hòn Rỏi, Gầm Ghì, Mây Rút Ngoài, Mây Rút Trong; ăn trưa tại nhà hàng trên đảo","Roi, Gam Ghi, May Rut Ngoai and May Rut Trong; lunch at an island restaurant","Рой, Гам Ги, Май Рут Нгоай и Май Рут Чонг; обед в ресторане на острове"]},
+ {id:"10",c:"speed",k:"TRIP2",p:"1.700.000",h:"8:00–17:00",
+  t:["Cano 4 đảo & cáp treo","4-island speedboat tour with cable car","4 острова на катере и канатная дорога"],
+  d:["Cano 4 đảo, công viên nước Aquatopia và cáp treo Hòn Thơm","4-island speedboat trip, Aquatopia water park and the Hon Thom cable car","4 острова на катере, аквапарк Aquatopia и канатная дорога Хон Тхом"]},
+ {id:"11",c:"land",k:"LAND1",p:"620.000",h:"8:00–16:30",
+  t:["Nét truyền thống phía Nam đảo","Southern Phu Quoc highlights","Традиции юга острова"],
+  d:["7 điểm đặc trưng: vườn tiêu, nước mắm, rượu sim, ngọc trai, nhà tù Phú Quốc, chùa Hộ Quốc, Bãi Sao","7 highlights: pepper farm, fish sauce, sim wine, pearls, Coconut prison, Ho Quoc pagoda, Sao beach","7 мест: перечная ферма, рыбный соус, вино из симы, жемчуг, тюрьма Кокосовая, пагода Хо Куок, пляж Сао"]},
+ {id:"12",c:"land",k:"LAND2",p:"1.750.000",h:"8:00–16:30",
+  t:["Phía Nam đảo & cáp treo","Southern Phu Quoc with cable car","Юг острова и канатная дорога"],
+  d:["Như LAND1, thêm cáp treo Sunworld Hòn Thơm 3 dây và buffet trưa tại Hòn Thơm","Same as LAND1, plus the 3-wire Hon Thom cable car and a buffet lunch on Hon Thom","Как LAND1, плюс трёхканатная дорога Хон Тхом и обед-буфет на острове"]},
+ {id:"13",c:"land",k:"RED10",p:"1.400.000",m:1,h:"8:30–16:30",
+  t:["Kayak hoặc thuyền thúng sông Cửa Cạn","Kayak or basket boat, Cua Can river","Каяк или корзинная лодка по реке Куа Кан"],
+  d:["Làng tơ lụa, sông Cửa Cạn, vườn tiêu, Rạch Vẹm, Mũi Hàm Rồng. Kayak: 1.400.000₫ · Thuyền thúng: 1.500.000₫","Silk center, Cua Can river, pepper farm, Rach Vem beach, Ham Rong cape. Kayak: 1,400,000₫ · Basket boat: 1,500,000₫","Шёлковый центр, река Куа Кан, перцовая ферма, пляж Рач Вем, мыс Хам Ронг. Каяк: 1 400 000₫ · Корзинная лодка: 1 500 000₫"]},
+ {id:"14",c:"land",k:"VIN3",p:"550.000",h:"8:00–12:00",
+  t:["City tour Trung tâm Dương Đông","Duong Dong city tour","Городской тур по Зонг Донг"],
+  d:["Dinh Cậu, tơ lụa, chợ đặc sản, rượu sim, ngọc trai, vườn tiêu, nước mắm, chùa Sư Muôn","Dinh Cau temple, silk, specialty market, sim wine, pearls, pepper farm, fish sauce, Su Muon pagoda","Храм Динь Кау, шёлк, рынок, вино из симы, жемчуг, перец, рыбный соус, пагода Су Муон"]}
+];
+
+var CATS = {all:["Tất cả","All","Все"],fish:["Câu cá","Fishing","Рыбалка"],sea:["Tàu & biển","Boat & sea","Лодка и море"],speed:["Cano","Speedboat","Катер"],land:["Đất liền","Land tours","Наземные"]};
+
+var T = {
+vi:{badge:"Bảng giá áp dụng từ 04/10/2026",h1:"Khám phá Phú Quốc cùng Red River Tour",sub:"15 năm đồng hành cùng du khách: tour tàu, cano, câu cá, lặn biển và tham quan đất liền. Vui lòng liên hệ để đặt tour.",call:"Gọi đặt tour",callS:"Gọi",toursH:"Các tour nổi bật",toursSub:"Bấm vào ảnh hoặc nút để xem lịch trình, thực đơn và phụ thu chi tiết. Tổ chức tour riêng theo yêu cầu.",from:"Từ",pax:"/khách",time:"Giờ hoạt động",view:"Xem lịch trình & thực đơn",pickH:"Phụ thu đón & tiễn",pickNote:"Nhóm từ 5 khách vui lòng liên hệ để nhận giá ưu đãi tốt nhất. Tour đất liền: khu Bãi Trường phụ thu 50.000₫/khách.",pickRows:[["Ông Lang","100.000₫"],["Cửa Cạn, Vũng Bầu","200.000₫"],["Bãi Dài, Gành Dầu","400.000₫"],["Cây Sao, Hàm Ninh","200.000₫"]],polH:"Chính sách & điều khoản",pol:[["Chính sách hủy","Hủy trước 1 ngày: không phạt. Hủy trong ngày: phạt 100% (tour ghép và tour riêng)."],["Chính sách trẻ em","Dưới 100cm: miễn phí. Từ 100cm đến dưới 140cm: 70% giá vé. Không áp dụng cho tour RED3."],["Bất khả kháng","Hủy do thiên tai, chiến tranh, dịch bệnh, hỏa hoạn, lũ lụt, lệnh cấm tàu/xe/đường, đình công, hoãn hủy chuyến bay…: công ty chỉ hoàn lại dịch vụ chưa sử dụng, không bồi thường thêm."],["Chuẩn bị trước khi đi","Mang khăn tắm, đồ bơi, kem chống nắng. Vui lòng cho chúng tôi biết nếu bạn ăn chay."],["Lưu ý khác","Chương trình có thể điều chỉnh nhưng vẫn đảm bảo đủ điểm tham quan. Cần cung cấp họ tên, ngày sinh, số CCCD/passport và quốc tịch để mua bảo hiểm."]],mapH:"Bản đồ du lịch Phú Quốc",ctH:"Liên hệ",hot:"Hotline",addr:"Địa chỉ",adTag:"GỢI Ý CHO KHÁCH DU LỊCH",adOff:"Giảm 10%",adTxt:"Đồ lặn và phụ kiện biển chính hãng, ưu đãi cho khách của trang này.",adBtn:"Xem cửa hàng",pay:"Chấp nhận thanh toán"},
+en:{badge:"Price list effective from October 4, 2026",h1:"Discover Phu Quoc with Red River Tour",sub:"15 years with travelers: boat tours, speedboats, fishing, diving and land tours. Please contact us to book.",call:"Call to book",callS:"Call",toursH:"Our tours",toursSub:"Tap a photo or button for the full itinerary, menu and surcharges. Private tours available on request.",from:"From",pax:"/pax",time:"Operating hours",view:"View itinerary & menu",pickH:"Extra pick-up & drop-off",pickNote:"For groups of 5 or more, please contact us for the best rate. Land tours: Bai Truong area surcharge 50,000₫/pax.",pickRows:[["Ong Lang","100,000₫"],["Cua Can, Vung Bau","200,000₫"],["Bai Dai, Ganh Dau","400,000₫"],["Cay Sao, Ham Ninh","200,000₫"]],polH:"Policies & terms of service",pol:[["Cancellation policy","Cancel 1 day before: no charge. Cancel within the tour day: full charge (daily and private tours)."],["Children policy","Under 100cm: free. 100cm to under 140cm: 70% of the fare. Not applicable to tour RED3."],["Exception","Cancellations due to unavoidable factors (disasters, war, disease, fire, floods, ferry/coach/road bans, strikes, flight delays or cancellations…): we refund only the services not used, with no further compensation."],["Prepare before the trip","Bring a towel, swimwear and sunscreen. Please tell us if you are vegetarian."],["Important notes","The itinerary may be adjusted but keeps all key attractions. Guests must provide full name, date of birth, ID/passport number and nationality for insurance."]],mapH:"Phu Quoc tourist map",ctH:"Contact",hot:"Hotline",addr:"Address",adTag:"RECOMMENDED FOR TRAVELERS",adOff:"10% off",adTxt:"Genuine diving gear and sea accessories, with a discount for guests of this page.",adBtn:"View stores",pay:"We accept payment by"},
+ru:{badge:"Прайс-лист действует с 4 октября 2026",h1:"Откройте для себя Фукуок с Red River Tour",sub:"15 лет рядом с туристами: морские прогулки на лодке и катере, рыбалка, дайвинг и наземные экскурсии. Свяжитесь с нами для бронирования.",call:"Позвонить и забронировать",callS:"Звонок",toursH:"Наши туры",toursSub:"Нажмите на фото или кнопку, чтобы увидеть программу, меню и доплаты (на вьетнамском и английском). Индивидуальные туры по запросу.",from:"От",pax:"/чел.",time:"Время работы",view:"Программа и меню",pickH:"Доплата за трансфер",pickNote:"Для групп от 5 человек свяжитесь с нами, чтобы получить лучшую цену. Наземные туры: зона Бай Чыонг — доплата 50 000₫/чел.",pickRows:[["Ong Lang","100 000₫"],["Cua Can, Vung Bau","200 000₫"],["Bai Dai, Ganh Dau","400 000₫"],["Cay Sao, Ham Ninh","200 000₫"]],polH:"Правила и условия",pol:[["Отмена","За 1 день: без штрафа. В день тура: штраф 100% (групповые и индивидуальные туры)."],["Дети","До 100 см: бесплатно. От 100 до 140 см: 70% стоимости. Не действует для тура RED3."],["Форс-мажор","При отмене из-за обстоятельств непреодолимой силы (стихийные бедствия, война, эпидемии, пожар, наводнение, запреты на движение, забастовки, задержка или отмена рейсов…) возвращается только стоимость неиспользованных услуг, дополнительная компенсация не выплачивается."],["Подготовка","Возьмите полотенце, купальные принадлежности и солнцезащитный крем. Сообщите нам, если вы вегетарианец."],["Важно","Программа может быть скорректирована, но все ключевые места сохраняются. Для страховки нужны ФИО, дата рождения, номер паспорта и гражданство."]],mapH:"Туристическая карта Фукуока",ctH:"Контакты",hot:"Горячая линия",addr:"Адрес",adTag:"РЕКОМЕНДАЦИЯ ДЛЯ ТУРИСТОВ",adOff:"Скидка 10%",adTxt:"Оригинальное снаряжение для дайвинга и аксессуары, скидка для гостей этой страницы.",adBtn:"Магазины",pay:"Принимаем к оплате"}
+};
+function IMG(n) { return (window.IMGS && window.IMGS[n]) || "images/" + n; }
+var IDX = {vi:0,en:1,ru:2}, LANG = "vi", CAT = "all";
+
+try { var s = localStorage.getItem("lang"); if (T[s]) LANG = s; } catch (e) {}
+
+function track(ch, where) {
+  if (!TRACK_URL || TRACK_URL.indexOf("http") !== 0) return;
+  var ref = "";
+  try { ref = document.referrer ? new URL(document.referrer).hostname : ""; } catch (e) {}
+  try {
+    fetch(TRACK_URL, {method:"POST", mode:"no-cors", keepalive:true, headers:{"Content-Type":"text/plain;charset=utf-8"},
+      body:JSON.stringify({channel:ch, where:where, loc:"pq", lang:LANG, ref:ref})}).catch(function(){});
+  } catch (e) {}
+}
+document.addEventListener("click", function (e) {
+  var a = e.target.closest("[data-ch]");
+  if (a) track(a.getAttribute("data-ch"), a.getAttribute("data-where") || "");
+  var o = e.target.closest("[data-open]");
+  if (o) openLb(IMG(o.getAttribute("data-open")));
+});
+
+function money(p) { return LANG === "vi" ? p + "₫" : (LANG === "en" ? p.replace(/\./g, ",") : p.replace(/\./g, "\u00a0")) + "₫"; }
+
+function render() {
+  var i = IDX[LANG], L = T[LANG];
+  document.documentElement.lang = LANG;
+  document.querySelectorAll("[data-t]").forEach(function (el) { el.textContent = L[el.getAttribute("data-t")]; });
+  document.querySelectorAll("#lang button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-l") === LANG); });
+  document.getElementById("chips").innerHTML = Object.keys(CATS).map(function (k) {
+    return '<button data-c="' + k + '"' + (k === CAT ? ' class="on"' : "") + ">" + CATS[k][i] + "</button>";
+  }).join("");
+  document.getElementById("grid").innerHTML = TOURS.filter(function (t) { return CAT === "all" || t.c === CAT; }).map(function (t) {
+    return '<article class="card"><button class="ph" data-open="tour-' + t.id + '.jpg" aria-label="' + t.t[i] + '"><img loading="lazy" src="' + IMG("card-" + t.id + ".jpg") + '" alt="' + t.t[i] + '"></button>' +
+      '<div class="cb"><span class="code">' + t.k + "</span><h3>" + t.t[i] + "</h3><p>" + t.d[i] + "</p>" +
+      '<div class="time">⏰ ' + L.time + ": " + t.h + "</div>" +
+      '<div class="price">' + (t.m ? L.from + " " : "") + "<b>" + money(t.p) + "</b>" + L.pax + "</div>" +
+      '<button class="btn" data-open="tour-' + t.id + '.jpg">' + L.view + "</button></div></article>";
+  }).join("");
+  document.getElementById("pick").innerHTML = L.pickRows.map(function (r) { return "<tr><td>" + r[0] + "</td><td>" + r[1] + "</td></tr>"; }).join("");
+  document.getElementById("pol").innerHTML = L.pol.map(function (r) { return "<div><h4>" + r[0] + "</h4><p>" + r[1] + "</p></div>"; }).join("");
+  document.title = "Red River Tour – " + L.toursH;
+}
+document.getElementById("lang").addEventListener("click", function (e) {
+  var l = e.target.getAttribute("data-l");
+  if (!l) return;
+  LANG = l;
+  try { localStorage.setItem("lang", l); } catch (x) {}
+  render();
+});
+document.getElementById("chips").addEventListener("click", function (e) {
+  var c = e.target.getAttribute("data-c");
+  if (c) { CAT = c; render(); }
+});
+
+var lb = document.getElementById("lb"), lbi = document.getElementById("lbi");
+function openLb(src) { lbi.src = src; lb.classList.add("on"); lb.scrollTop = 0; }
+function closeLb() { lb.classList.remove("on"); }
+document.getElementById("lbx").addEventListener("click", closeLb);
+lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeLb(); });
+document.getElementById("mapImg").addEventListener("click", function () { openLb(IMG("map.jpg")); });
+
+render();
+</script>
+</body>
+</html>
