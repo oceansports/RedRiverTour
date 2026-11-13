@@ -4,49 +4,57 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0a1428">
 <title>Red River Tour – Tour Phú Quốc</title>
 <meta name="description" content="Red River Tour – bảng giá tour Phú Quốc: tàu 2–3 đảo, cano 4 đảo, câu cá, lặn biển, tham quan đất liền.">
 <style>
-:root{--navy:#1c3f7c;--blue:#2f7fc1;--amber:#f6a800;--bg:#f2f7fc;--ink:#14243f;--mut:#5b6b85}
+:root{--amber:#fbb644;--ink:#e8eefc;--mut:#9fb0cf;--panel:#12214a;--line:#24396a;--blue:#2f9bd6}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#0a1428 radial-gradient(ellipse at 50% -10%,#1a3a78 0%,#0a1428 60%) no-repeat;background-attachment:fixed;color:var(--ink);line-height:1.55;padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
 img{max-width:100%;display:block}a{color:inherit}
-header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 1px 8px #0002;padding:calc(8px + env(safe-area-inset-top,0px)) 14px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-header img{height:38px;width:auto}
-.lang button{border:1.5px solid var(--navy);background:#fff;color:var(--navy);font-weight:700;padding:5px 10px;border-radius:8px;margin-left:4px;cursor:pointer}
-.lang button.on{background:var(--navy);color:#fff}
-.wrap{max-width:1080px;margin:0 auto;padding:0 14px}
-.hero{padding:16px 0 8px;text-align:center}
-.hero img{border-radius:18px;margin:0 auto;width:100%;max-width:720px;box-shadow:0 6px 20px #0003}
-.hero h1{font-size:clamp(1.6rem,5vw,2.5rem);color:var(--navy);margin:18px 0 6px;line-height:1.2}
-.hero p{margin:0 auto;max-width:640px;color:var(--mut)}
-.badge{display:inline-block;background:var(--amber);color:#1b1b1b;font-weight:700;border-radius:99px;padding:5px 14px;margin:14px 0 4px;font-size:.9rem}
-.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 20px;font:700 1rem inherit;font-family:inherit;text-decoration:none;color:#fff;cursor:pointer}
-.b-call{background:#d62f2f}.b-zalo{background:#0068ff}.b-wa{background:#1fa855}.b-nav{background:var(--navy)}
-h2{color:var(--navy);font-size:1.6rem;margin:34px 0 6px}
-.sub{color:var(--mut);margin:0 0 14px}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
-.chips button{border:1.5px solid var(--navy);background:#fff;color:var(--navy);font-weight:600;padding:7px 14px;border-radius:99px;cursor:pointer;font-family:inherit}
-.chips button.on{background:var(--navy);color:#fff}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:16px}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 14px #1c3f7c26;display:flex;flex-direction:column}
-.ph{border:0;padding:0;background:#dbe8f5;cursor:zoom-in;aspect-ratio:720/505}
+header{position:sticky;top:0;z-index:20;background:#0a1428e6;backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:calc(8px + env(safe-area-inset-top,0px)) 16px 8px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+header .logo{background:#fff;border-radius:10px;padding:4px 10px}header img{height:34px;width:auto}
+.lang button{border:1.5px solid var(--line);background:transparent;color:var(--ink);font-weight:700;padding:6px 12px;border-radius:8px;margin-left:6px;cursor:pointer}
+.lang button.on{background:var(--amber);border-color:var(--amber);color:#1a1200}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.hero{display:grid;gap:22px;padding:22px 0 6px;align-items:center}
+@media(min-width:820px){.hero{grid-template-columns:1fr 1.05fr;gap:40px;padding:44px 0 14px}.hero-i{order:2}}
+.hero-i img{width:100%;border-radius:22px;border:3px solid var(--amber);box-shadow:0 14px 40px #0008}
+.badge{display:inline-block;border:1.5px solid var(--amber);color:var(--amber);font-weight:700;border-radius:99px;padding:5px 16px;font-size:.88rem}
+.hero h1{font-size:clamp(1.9rem,5.5vw,3rem);line-height:1.15;margin:14px 0 12px;color:#fff}
+.hero p{margin:0;color:var(--mut);font-size:1.05rem;max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}.cta .btn{flex:1 1 auto;padding:13px 14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:13px 22px;font:700 1rem inherit;font-family:inherit;text-decoration:none;color:#fff;cursor:pointer}
+.b-call{background:#e23b3b}.b-zalo{background:#0a6cff}.b-wa{background:#1fa855}
+h2{color:#fff;font-size:1.7rem;margin:52px 0 6px;padding-left:14px;border-left:5px solid var(--amber);line-height:1.2}
+.sub{color:var(--mut);margin:0 0 16px;padding-left:19px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 20px}
+.chips button{border:1.5px solid var(--line);background:var(--panel);color:var(--ink);font-weight:600;padding:8px 16px;border-radius:99px;cursor:pointer;font-family:inherit}
+.chips button.on{background:var(--amber);border-color:var(--amber);color:#1a1200}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--amber)}
+.ph{position:relative;border:0;padding:0;background:#0d1a38;cursor:zoom-in;aspect-ratio:720/505;display:block;width:100%}
 .ph img{width:100%;height:100%;object-fit:cover}
-.cb{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.code{align-self:flex-start;background:var(--amber);font-weight:800;font-size:.75rem;padding:2px 9px;border-radius:6px}
-.cb h3{margin:2px 0;font-size:1.1rem;color:var(--navy);line-height:1.25}
-.cb p{margin:0;color:var(--mut);font-size:.93rem}
-.time{font-size:.9rem}
-.price{margin-top:auto;font-size:.95rem}.price b{font-size:1.45rem;color:#c9302c}
-.cb .btn{background:var(--blue);padding:10px;font-size:.95rem;margin-top:6px}
-.panel{background:#fff;border-radius:16px;padding:16px;box-shadow:0 3px 14px #1c3f7c1f}
-table{width:100%;border-collapse:collapse}td{padding:8px 4px;border-bottom:1px solid #e4ecf5}td:last-child{text-align:right;font-weight:700;white-space:nowrap;padding-left:10px}
-.note{color:#c9501c;font-size:.9rem;margin:10px 0 0}
-.pol{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.pol h4{margin:0 0 6px;color:var(--navy)}.pol p{margin:0;font-size:.94rem}
-.map{cursor:zoom-in;border-radius:16px;margin:0 auto;max-height:520px;width:auto;box-shadow:0 3px 14px #0003}
-.ct{display:grid;gap:8px}.ct div{display:flex;gap:10px}.ct b{min-width:92px;color:var(--navy)}
+.code{position:absolute;left:12px;top:12px;background:var(--amber);color:#1a1200;font-weight:800;font-size:.78rem;padding:3px 10px;border-radius:7px}
+.pb{position:absolute;right:12px;bottom:12px;background:#0a1428ee;border:1.5px solid var(--amber);border-radius:12px;padding:5px 12px;text-align:right;line-height:1.2;color:var(--mut);font-size:.78rem}
+.pb b{display:block;color:var(--amber);font-size:1.2rem}
+.pbtn{position:absolute;inset:0;border:0;padding:0;background:none;cursor:zoom-in}.code,.pb{pointer-events:none}
+.cb{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cb h3{margin:0;font-size:1.12rem;color:#fff;line-height:1.3}
+.cb p{margin:0;color:var(--mut);font-size:.92rem}
+.time{font-size:.88rem;color:#c8d4ee;margin-top:auto}
+.cb .btn{background:transparent;border:1.5px solid var(--blue);color:#7cc6f5;padding:10px;font-size:.95rem;margin-top:4px}
+.cb .btn:hover{background:var(--blue);color:#fff}
+.two{display:grid;gap:20px}@media(min-width:820px){.two{grid-template-columns:1fr 1.4fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}
+.panel h3{margin:0 0 10px;color:#fff;font-size:1.15rem}
+table{width:100%;border-collapse:collapse}td{padding:10px 2px;border-bottom:1px solid var(--line)}tr:last-child td{border:0}td:last-child{text-align:right;font-weight:700;color:var(--amber);white-space:nowrap;padding-left:10px}
+.note{color:#ffb48a;font-size:.88rem;margin:12px 0 0}
+.pol{display:grid;gap:16px}.pol h4{margin:0 0 4px;color:var(--amber);font-size:1rem}.pol p{margin:0;font-size:.92rem;color:#c8d4ee}
+.map{cursor:zoom-in;border-radius:18px;margin:0 auto;max-height:560px;width:auto;border:3px solid var(--line)}
+.ct{display:grid;gap:12px}.ct div{display:flex;gap:12px;flex-wrap:wrap}.ct b{min-width:92px;color:var(--amber)}
+.ct a{text-decoration:none}.ct strong{color:#fff;font-size:1.15rem}
 .ad{margin:34px 0 10px;background:#0f1a2e;border:3px solid #fbb644;border-radius:22px;padding:28px 22px;color:#e9eefa;display:grid;grid-template-columns:1fr;gap:22px}
 @media(min-width:760px){.ad{grid-template-columns:1.1fr 1fr;gap:34px;padding:42px 44px}}
 .ad-tag{display:inline-block;border:1.5px solid #fbb644;color:#fbb644;font-weight:700;font-size:.9rem;border-radius:8px;padding:4px 14px}
@@ -59,31 +67,52 @@ table{width:100%;border-collapse:collapse}td{padding:8px 4px;border-bottom:1px s
 .ad-st{margin:16px 0;font-size:.9rem;color:#93a2bf;line-height:1.5}.ad-st b{display:block;color:#eaf0fb;margin-top:6px}
 .ad .btn{background:linear-gradient(90deg,#fbb644,#ee7b50);color:#2a1300;padding:15px 34px;font-size:1.1rem}
 .ad-url{display:block;margin-top:12px;color:#93a2bf;font-size:.9rem;text-decoration:none}
-footer{margin-top:28px;background:var(--navy);color:#dbe7f7;text-align:center;padding:22px 14px}
-footer img{margin:8px auto 0;height:74px;width:auto;background:#fff;border-radius:10px;padding:6px 12px}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:#fffffff2;box-shadow:0 -2px 12px #0003}
+footer{margin-top:36px;background:#070e20;border-top:1px solid var(--line);color:var(--mut);text-align:center;padding:26px 14px}
+footer img{margin:10px auto 0;height:72px;width:auto;background:#fff;border-radius:12px;padding:6px 14px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:8px;padding:9px 12px calc(9px + env(safe-area-inset-bottom,0px));background:#0a1428f2;border-top:1px solid var(--line);backdrop-filter:blur(10px)}
 .bar a{flex:1;padding:12px 4px;font-size:.95rem}
-.lb{position:fixed;inset:0;z-index:50;background:#000d;overflow:auto;display:none;padding:50px 10px 20px;text-align:center}
+.lb{position:fixed;inset:0;z-index:50;background:#05080ffa;overflow:auto;display:none;padding:56px 10px 20px;text-align:center}
 .lb.on{display:block}.lb img{margin:0 auto;max-width:min(900px,100%);border-radius:8px;background:#fff}
-.lb button{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:12px;border:0;background:#fff;border-radius:99px;width:40px;height:40px;font-size:1.3rem;cursor:pointer}
+.lb button{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:12px;border:0;background:#fff;border-radius:99px;width:42px;height:42px;font-size:1.3rem;cursor:pointer}
+
+html{-webkit-text-size-adjust:100%}
+body{background:linear-gradient(#10285a 0,#0a1428 720px) #0a1428;overflow-x:hidden}
+button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;position:sticky;top:var(--hh,56px);z-index:15;background:#0a1428f2;margin:0 -16px 16px;padding:10px 16px}
+.chips::-webkit-scrollbar{display:none}.chips button{flex:none;min-height:42px}
+.lang button{min-height:40px;min-width:46px}
+.ph{aspect-ratio:16/10.5}.ph img{object-position:top}
+.bar{z-index:60}.bar a{min-height:48px}
+.lb{padding-bottom:100px}.lb img{cursor:zoom-in}.lb img.z{max-width:none;width:230%;cursor:zoom-out}
+.lbh{color:#c8d4ee;font-size:.85rem;margin:0 0 8px}
+@media(max-width:600px){
+ h2{font-size:1.45rem;margin-top:38px}.sub{font-size:.95rem}
+ .hero{padding-top:14px;gap:16px}.hero h1{font-size:1.75rem;margin:12px 0 8px}.hero p{font-size:1rem}
+ .cta{gap:8px}.cta .btn{padding:14px 6px;font-size:.95rem}
+ .cb{padding:14px;gap:6px}.cb h3{font-size:1.05rem}.cb .btn{min-height:46px}
+ .panel{padding:16px}.grid{gap:16px}
+ .ad{padding:24px 18px}.ad .btn{width:100%}.ad-url{text-align:center}
+}
 </style>
 </head>
 <body>
 <header>
-  <a href="#top"><img src="images/logo.png" alt="Red River Tour"></a>
+  <a href="#top" class="logo"><img src="images/logo.png" alt="Red River Tour"></a>
   <div class="lang" id="lang"><button data-l="vi">VI</button><button data-l="en">EN</button></div>
 </header>
 
 <main class="wrap" id="top">
   <section class="hero">
-    <img src="images/hero.png" alt="Red River Tour Phú Quốc">
-    <span class="badge" data-t="badge"></span>
-    <h1 data-t="h1"></h1>
-    <p data-t="sub"></p>
-    <div class="cta">
-      <a class="btn b-call" data-ch="call" data-where="hero" href="tel:0907067786">📞 <span data-t="call"></span></a>
-      <a class="btn b-zalo" data-ch="zalo" data-where="hero" href="https://zalo.me/0907067786" target="_blank" rel="noopener">Zalo</a>
-      <a class="btn b-wa" data-ch="wa" data-where="hero" href="https://wa.me/84907067786" target="_blank" rel="noopener">WhatsApp</a>
+    <div class="hero-i"><img src="images/hero.png" alt="Red River Tour Phú Quốc" fetchpriority="high" decoding="async"></div>
+    <div>
+      <span class="badge" data-t="badge"></span>
+      <h1 data-t="h1"></h1>
+      <p data-t="sub"></p>
+      <div class="cta">
+        <a class="btn b-call" data-ch="call" data-where="hero" href="tel:0907067786">📞 <span data-t="call"></span></a>
+        <a class="btn b-zalo" data-ch="zalo" data-where="hero" href="https://zalo.me/0907067786" target="_blank" rel="noopener">Zalo</a>
+        <a class="btn b-wa" data-ch="wa" data-where="hero" href="https://wa.me/84907067786" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -95,15 +124,15 @@ footer img{margin:8px auto 0;height:74px;width:auto;background:#fff;border-radiu
   </section>
 
   <section id="info">
-    <h2 data-t="pickH"></h2>
-    <div class="panel">
-      <table id="pick"></table>
-      <p class="note" data-t="pickNote"></p>
-    </div>
-
     <h2 data-t="polH"></h2>
-    <div class="pol panel" id="pol"></div>
-
+    <div class="two">
+      <div class="panel">
+        <h3 data-t="pickH"></h3>
+        <table id="pick"></table>
+        <p class="note" data-t="pickNote"></p>
+      </div>
+      <div class="panel pol" id="pol"></div>
+    </div>
     <h2 data-t="mapH"></h2>
     <img class="map" id="mapImg" src="images/map.png" alt="Map" loading="lazy">
   </section>
@@ -151,7 +180,7 @@ footer img{margin:8px auto 0;height:74px;width:auto;background:#fff;border-radiu
   <a class="btn b-wa" data-ch="wa" data-where="float" href="https://wa.me/84907067786" target="_blank" rel="noopener">WhatsApp</a>
 </nav>
 
-<div class="lb" id="lb"><button aria-label="Close" id="lbx">✕</button><img id="lbi" alt=""></div>
+<div class="lb" id="lb"><button aria-label="Close" id="lbx">✕</button><p class="lbh" data-t="lbHint"></p><img id="lbi" alt=""></div>
 
 <script>
 // Dán link Web App (kết thúc bằng /exec) của Google Apps Script vào đây để đếm lượt bấm.
@@ -199,8 +228,8 @@ var TOURS = [
 var CATS = {all:["Tất cả","All"],fish:["Câu cá","Fishing"],sea:["Tàu & biển","Boat & sea"],speed:["Cano","Speedboat"],land:["Đất liền","Land tours"]};
 
 var T = {
-vi:{badge:"Bảng giá áp dụng từ 04/10/2026",h1:"Khám phá Phú Quốc cùng Red River Tour",sub:"15 năm đồng hành cùng du khách: tour tàu, cano, câu cá, lặn biển và tham quan đất liền. Vui lòng liên hệ để đặt tour.",call:"Gọi đặt tour",callS:"Gọi",toursH:"Các tour nổi bật",toursSub:"Bấm vào ảnh hoặc nút để xem lịch trình, thực đơn và phụ thu chi tiết. Tổ chức tour riêng theo yêu cầu.",from:"Từ",pax:"/khách",time:"Giờ hoạt động",view:"Xem lịch trình & thực đơn",pickH:"Phụ thu đón & tiễn",pickNote:"Nhóm từ 5 khách vui lòng liên hệ để nhận giá ưu đãi tốt nhất. Tour đất liền: khu Bãi Trường phụ thu 50.000₫/khách.",pickRows:[["Ông Lang","100.000₫"],["Cửa Cạn, Vũng Bầu","200.000₫"],["Bãi Dài, Gành Dầu","400.000₫"],["Cây Sao, Hàm Ninh","200.000₫"]],polH:"Chính sách & điều khoản",pol:[["Chính sách hủy","Hủy trước 1 ngày: không phạt. Hủy trong ngày: phạt 100% (tour ghép và tour riêng)."],["Chính sách trẻ em","Dưới 100cm: miễn phí. Từ 100cm đến dưới 140cm: 70% giá vé. Không áp dụng cho tour RED3."],["Bất khả kháng","Hủy do thiên tai, chiến tranh, dịch bệnh, hỏa hoạn, lũ lụt, lệnh cấm tàu/xe/đường, đình công, hoãn hủy chuyến bay…: công ty chỉ hoàn lại dịch vụ chưa sử dụng, không bồi thường thêm."],["Chuẩn bị trước khi đi","Mang khăn tắm, đồ bơi, kem chống nắng. Vui lòng cho chúng tôi biết nếu bạn ăn chay."],["Lưu ý khác","Chương trình có thể điều chỉnh nhưng vẫn đảm bảo đủ điểm tham quan. Cần cung cấp họ tên, ngày sinh, số CCCD/passport và quốc tịch để mua bảo hiểm."]],mapH:"Bản đồ du lịch Phú Quốc",ctH:"Liên hệ",hot:"Hotline",addr:"Địa chỉ",adTag:"Gợi ý cho bạn",adH:"Cần đồ lặn? Chúng tôi hay ghé",adSub:"Thiết bị lặn chính hãng từ châu Âu và Mỹ.",adB1:"Chân nhái, kính lặn, ống thở, đồ lặn và phụ kiện",adB2:"Nhận bảo dưỡng bộ điều áp",adB3:"Miễn phí vận chuyển cho đơn trên 4 triệu đồng",adCp:"Ưu đãi riêng cho khách của trang này",adOff:"Giảm 10%",adBtn:"Xem cửa hàng",adStores:[["Nha Trang","39 Mạc Đĩnh Chi, Phước Tiến","8:30–19:00"],["Phú Quốc","Bán lưu động tại Dương Đông","7:00–20:00"],["Quy Nhơn","71 Bùi Thị Xuân, Bình Định","Chỉ mở khi gọi điện trước"]],pay:"Chấp nhận thanh toán"},
-en:{badge:"Price list effective from October 4, 2026",h1:"Discover Phu Quoc with Red River Tour",sub:"15 years with travelers: boat tours, speedboats, fishing, diving and land tours. Please contact us to book.",call:"Call to book",callS:"Call",toursH:"Our tours",toursSub:"Tap a photo or button for the full itinerary, menu and surcharges. Private tours available on request.",from:"From",pax:"/pax",time:"Operating hours",view:"View itinerary & menu",pickH:"Extra pick-up & drop-off",pickNote:"For groups of 5 or more, please contact us for the best rate. Land tours: Bai Truong area surcharge 50,000₫/pax.",pickRows:[["Ong Lang","100,000₫"],["Cua Can, Vung Bau","200,000₫"],["Bai Dai, Ganh Dau","400,000₫"],["Cay Sao, Ham Ninh","200,000₫"]],polH:"Policies & terms of service",pol:[["Cancellation policy","Cancel 1 day before: no charge. Cancel within the tour day: full charge (daily and private tours)."],["Children policy","Under 100cm: free. 100cm to under 140cm: 70% of the fare. Not applicable to tour RED3."],["Exception","Cancellations due to unavoidable factors (disasters, war, disease, fire, floods, ferry/coach/road bans, strikes, flight delays or cancellations…): we refund only the services not used, with no further compensation."],["Prepare before the trip","Bring a towel, swimwear and sunscreen. Please tell us if you are vegetarian."],["Important notes","The itinerary may be adjusted but keeps all key attractions. Guests must provide full name, date of birth, ID/passport number and nationality for insurance."]],mapH:"Phu Quoc tourist map",ctH:"Contact",hot:"Hotline",addr:"Address",adTag:"Recommended for you",adH:"Need diving gear? We often visit",adSub:"Genuine diving equipment from Europe and the US.",adB1:"Fins, masks, snorkels, wetsuits and accessories",adB2:"Regulator servicing available",adB3:"Free shipping on orders over 4 million VND",adCp:"Exclusive offer for guests of this page",adOff:"10% off",adBtn:"View stores",adStores:[["Nha Trang","39 Mac Dinh Chi, Phuoc Tien","8:30–19:00"],["Phu Quoc","Mobile sales in Duong Dong","7:00–20:00"],["Quy Nhon","71 Bui Thi Xuan, Binh Dinh","Open only when you call ahead"]],pay:"We accept payment by"}
+vi:{badge:"Bảng giá áp dụng từ 04/10/2026",h1:"Khám phá Phú Quốc cùng Red River Tour",sub:"15 năm đồng hành cùng du khách: tour tàu, cano, câu cá, lặn biển và tham quan đất liền. Vui lòng liên hệ để đặt tour.",call:"Gọi đặt tour",callS:"Gọi",toursH:"Các tour nổi bật",toursSub:"Bấm vào ảnh hoặc nút để xem lịch trình, thực đơn và phụ thu chi tiết. Tổ chức tour riêng theo yêu cầu.",from:"Từ",pax:"/khách",time:"Giờ hoạt động",view:"Xem lịch trình & thực đơn",pickH:"Phụ thu đón & tiễn",pickNote:"Nhóm từ 5 khách vui lòng liên hệ để nhận giá ưu đãi tốt nhất. Tour đất liền: khu Bãi Trường phụ thu 50.000₫/khách.",pickRows:[["Ông Lang","100.000₫"],["Cửa Cạn, Vũng Bầu","200.000₫"],["Bãi Dài, Gành Dầu","400.000₫"],["Cây Sao, Hàm Ninh","200.000₫"]],polH:"Chính sách & điều khoản",pol:[["Chính sách hủy","Hủy trước 1 ngày: không phạt. Hủy trong ngày: phạt 100% (tour ghép và tour riêng)."],["Chính sách trẻ em","Dưới 100cm: miễn phí. Từ 100cm đến dưới 140cm: 70% giá vé. Không áp dụng cho tour RED3."],["Bất khả kháng","Hủy do thiên tai, chiến tranh, dịch bệnh, hỏa hoạn, lũ lụt, lệnh cấm tàu/xe/đường, đình công, hoãn hủy chuyến bay…: công ty chỉ hoàn lại dịch vụ chưa sử dụng, không bồi thường thêm."],["Chuẩn bị trước khi đi","Mang khăn tắm, đồ bơi, kem chống nắng. Vui lòng cho chúng tôi biết nếu bạn ăn chay."],["Lưu ý khác","Chương trình có thể điều chỉnh nhưng vẫn đảm bảo đủ điểm tham quan. Cần cung cấp họ tên, ngày sinh, số CCCD/passport và quốc tịch để mua bảo hiểm."]],mapH:"Bản đồ du lịch Phú Quốc",ctH:"Liên hệ",hot:"Hotline",addr:"Địa chỉ",lbHint:"Chạm vào ảnh để phóng to / thu nhỏ",adTag:"Gợi ý cho bạn",adH:"Cần đồ lặn? Chúng tôi hay ghé",adSub:"Thiết bị lặn chính hãng từ châu Âu và Mỹ.",adB1:"Chân nhái, kính lặn, ống thở, đồ lặn và phụ kiện",adB2:"Nhận bảo dưỡng bộ điều áp",adB3:"Miễn phí vận chuyển cho đơn trên 4 triệu đồng",adCp:"Ưu đãi riêng cho khách của trang này",adOff:"Giảm 10%",adBtn:"Xem cửa hàng",adStores:[["Nha Trang","39 Mạc Đĩnh Chi, Phước Tiến","8:30–19:00"],["Phú Quốc","Bán lưu động tại Dương Đông","7:00–20:00"],["Quy Nhơn","71 Bùi Thị Xuân, Bình Định","Chỉ mở khi gọi điện trước"]],pay:"Chấp nhận thanh toán"},
+en:{badge:"Price list effective from October 4, 2026",h1:"Discover Phu Quoc with Red River Tour",sub:"15 years with travelers: boat tours, speedboats, fishing, diving and land tours. Please contact us to book.",call:"Call to book",callS:"Call",toursH:"Our tours",toursSub:"Tap a photo or button for the full itinerary, menu and surcharges. Private tours available on request.",from:"From",pax:"/pax",time:"Operating hours",view:"View itinerary & menu",pickH:"Extra pick-up & drop-off",pickNote:"For groups of 5 or more, please contact us for the best rate. Land tours: Bai Truong area surcharge 50,000₫/pax.",pickRows:[["Ong Lang","100,000₫"],["Cua Can, Vung Bau","200,000₫"],["Bai Dai, Ganh Dau","400,000₫"],["Cay Sao, Ham Ninh","200,000₫"]],polH:"Policies & terms of service",pol:[["Cancellation policy","Cancel 1 day before: no charge. Cancel within the tour day: full charge (daily and private tours)."],["Children policy","Under 100cm: free. 100cm to under 140cm: 70% of the fare. Not applicable to tour RED3."],["Exception","Cancellations due to unavoidable factors (disasters, war, disease, fire, floods, ferry/coach/road bans, strikes, flight delays or cancellations…): we refund only the services not used, with no further compensation."],["Prepare before the trip","Bring a towel, swimwear and sunscreen. Please tell us if you are vegetarian."],["Important notes","The itinerary may be adjusted but keeps all key attractions. Guests must provide full name, date of birth, ID/passport number and nationality for insurance."]],mapH:"Phu Quoc tourist map",ctH:"Contact",hot:"Hotline",addr:"Address",lbHint:"Tap the image to zoom in / out",adTag:"Recommended for you",adH:"Need diving gear? We often visit",adSub:"Genuine diving equipment from Europe and the US.",adB1:"Fins, masks, snorkels, wetsuits and accessories",adB2:"Regulator servicing available",adB3:"Free shipping on orders over 4 million VND",adCp:"Exclusive offer for guests of this page",adOff:"10% off",adBtn:"View stores",adStores:[["Nha Trang","39 Mac Dinh Chi, Phuoc Tien","8:30–19:00"],["Phu Quoc","Mobile sales in Duong Dong","7:00–20:00"],["Quy Nhon","71 Bui Thi Xuan, Binh Dinh","Open only when you call ahead"]],pay:"We accept payment by"}
 };
 function IMG(n) { return (window.IMGS && window.IMGS[n]) || "images/" + n; }
 var IDX = {vi:0,en:1}, LANG = "vi", CAT = "all";
@@ -234,10 +263,10 @@ function render() {
     return '<button data-c="' + k + '"' + (k === CAT ? ' class="on"' : "") + ">" + CATS[k][i] + "</button>";
   }).join("");
   document.getElementById("grid").innerHTML = TOURS.filter(function (t) { return CAT === "all" || t.c === CAT; }).map(function (t) {
-    return '<article class="card"><button class="ph" data-open="tour-' + t.id + '.png" aria-label="' + t.t[i] + '"><img loading="lazy" src="' + IMG("card-" + t.id + ".png") + '" alt="' + t.t[i] + '"></button>' +
-      '<div class="cb"><span class="code">' + t.k + "</span><h3>" + t.t[i] + "</h3><p>" + t.d[i] + "</p>" +
+    return '<article class="card"><div class="ph"><button class="pbtn" data-open="tour-' + t.id + '.png" aria-label="' + t.t[i] + '"><img loading="lazy" decoding="async" src="' + IMG("card-" + t.id + ".png") + '" alt="' + t.t[i] + '"></button>' +
+      '<span class="code">' + t.k + '</span><div class="pb">' + (t.m ? L.from + " " : "") + "<b>" + money(t.p) + "</b>" + L.pax + "</div></div>" +
+      '<div class="cb"><h3>' + t.t[i] + "</h3><p>" + t.d[i] + "</p>" +
       '<div class="time">⏰ ' + L.time + ": " + t.h + "</div>" +
-      '<div class="price">' + (t.m ? L.from + " " : "") + "<b>" + money(t.p) + "</b>" + L.pax + "</div>" +
       '<button class="btn" data-open="tour-' + t.id + '.png">' + L.view + "</button></div></article>";
   }).join("");
   document.getElementById("adSt").innerHTML = L.adStores.map(function (r) { return "<b>" + r[0] + "</b>" + r[1] + "<br>" + r[2]; }).join("");
@@ -258,13 +287,21 @@ document.getElementById("chips").addEventListener("click", function (e) {
 });
 
 var lb = document.getElementById("lb"), lbi = document.getElementById("lbi");
-function openLb(src) { lbi.src = src; lb.classList.add("on"); lb.scrollTop = 0; }
-function closeLb() { lb.classList.remove("on"); }
+function openLb(src) { lbi.src = src; lbi.classList.remove("z"); lb.classList.add("on"); lb.scrollTop = 0; lb.scrollLeft = 0; document.body.style.overflow = "hidden"; try { history.pushState({lb:1}, ""); } catch (e) {} }
+function closeLb(fromPop) {
+  if (!lb.classList.contains("on")) return;
+  lb.classList.remove("on"); document.body.style.overflow = "";
+  if (fromPop !== true) { try { if (history.state && history.state.lb) history.back(); } catch (e) {} }
+}
+window.addEventListener("popstate", function () { closeLb(true); });
+lbi.addEventListener("click", function () { lbi.classList.toggle("z"); });
 document.getElementById("lbx").addEventListener("click", closeLb);
 lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
 document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeLb(); });
 document.getElementById("mapImg").addEventListener("click", function () { openLb(IMG("map.png")); });
 
+function hh() { document.documentElement.style.setProperty("--hh", document.querySelector("header").offsetHeight + "px"); }
+hh(); window.addEventListener("resize", hh); window.addEventListener("load", hh);
 render();
 </script>
 </body>
